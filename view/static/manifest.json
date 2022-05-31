@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "version": "0.0.1",
+  "short_name": "Dport",
+  "name": "Digital Portfolio",
+  "description": "My Portfolio",
+  "theme_color": "#0284c7",
+  "background_color": "#0ea5e9",
+  "display_override": [
+    "window-control-overlay",
+    "minimal-ui"
+  ],
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "categories": [
+    "personalization"
+  ],
+  "lang": "en",
+  "author": "Anas Mubarak Yasin",
+  "developer": {
+    "name": "Anas Mubarak Yasin",
+    "url": "https://github.com/AnasMubarakYasin/AnasMubarakYasin/"
+  },
+  "content_security_policy": "connect-src 'self'; font-src 'self'; frame-src 'self'; img-src 'self'; manifest-src 'self'; media-src 'self'; object-src 'self'; script-src 'self'; style-src 'self'; worker-src 'self'",
+  "icons": [
+    {
+      "src": "/proto-512.v2.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/proto-512-mono.v2.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "monochrome"
+    },
+    {
+      "src": "/proto-128.v2.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/proto-256.v2.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/proto-512.v2.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Mendaftar Pelanggan",
+      "short_name": "Mendaftar Pelanggan",
+      "description": "Mendaftar menjadi Pelanggan",
+      "url": "/entry/register?as=customer",
+      "icons": [
+        {
+          "src": "/proto-512.v2.png",
+          "sizes": "512x512"
+        }
+      ]
+    },
+    {
+      "name": "Masuk Pelanggan",
+      "short_name": "Masuk Pelanggan",
+      "description": "Masuk menjadi Pelanggan",
+      "url": "/entry/login?as=customer",
+      "icons": [
+        {
+          "src": "/proto-512.v2.png",
+          "sizes": "512x512"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-1.png",
+      "type": "image/png",
+      "sizes": "1366x768"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "/manifest.json"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+/// <reference types="@sveltejs/kit" />
+
+// See https://kit.svelte.dev/docs/types#the-app-namespace
+// for information about these interfaces
+declare namespace App {
+	// interface Locals {}
+
+	// interface Platform {}
+
+	interface Session {
+		id_portfolio?: string;
+	}
+
+	// interface Stuff {}
+}
+
+declare interface IAPILike {
+	id: string;
+	likes: number;
+}
