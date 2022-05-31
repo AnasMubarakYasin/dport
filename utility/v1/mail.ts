@@ -82,7 +82,8 @@ export default class Mail {
       secure: this.options.secure,
       logger: this.options.verbose,
     });
-    this.options.app.log.info(`Client Mail Initiated ${color.green("[*]")}`);
+    // this.options.app.log.info(`Client Mail Initiated ${color.green("[*]")}`);
+    console.log(`Client Mail Initiated ${color.green("[*]")}`);
     // console.log(color.bgBlack.white`Mail Server Created`, color.green`[*]`);
   }
   // public static listen(port?: number, host?: string) {
@@ -103,7 +104,12 @@ export default class Mail {
   //   });
   // }
   public static async send(options: SendOptions) {
-    this.options.app.log.info(
+    // this.options.app.log.info(
+    //   `Client Mail Send ${color.yellow(
+    //     `from: ${options.from} to: ${options.to} reply-to: ${options.replyTo}`
+    //   )}`
+    // );
+    console.log(
       `Client Mail Send ${color.yellow(
         `from: ${options.from} to: ${options.to} reply-to: ${options.replyTo}`
       )}`

@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "nodemon server.ts",
     "serve": "ts-node server.ts",
+    "build": "tsc -b --verbose",
+    "serve:up": "pm2 --no-daemon --no-autorestart -n server start build/server.js -- --log=true --proxy=true",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

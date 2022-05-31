@@ -58,7 +58,6 @@ export default async function (app: FastifyInstance, options: any) {
       } catch (error: any) {
         reply.status(500).send({ sttus: "failed", data: error });
       }
-      return reply;
     },
   });
 }
