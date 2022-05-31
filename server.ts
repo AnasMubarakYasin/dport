@@ -25,7 +25,7 @@ import type { AddressInfo } from "net";
 //   paths: tsconfig.compilerOptions.paths,
 // });
 
-const app = Fastify({});
+const app = Fastify({ logger: true });
 async function start() {
   app.register(import("@fastify/swagger"), {
     routePrefix: "/api/docs",
@@ -50,7 +50,7 @@ async function start() {
   });
 
   try {
-    await app.listen(3000);
+    await app.listen(5000);
 
     const address = app.server.address() as AddressInfo;
 
